@@ -35,4 +35,20 @@
 .container_botao{
     display: none;
 }
-.container_botao:checked .lista-menu
+.container_botao:checked~ .lista-menu{
+    display: block;
+}
+.lista-menu_titulo{
+    color: var(--amarelo);
+}
+.lista-menu_item{
+    backgroud: var(--roxo-degrade);
+    -webkit-backgroud-clip: text;
+    -webkit-text-fill-color: text;
+    background-clip: text;
+    text-transform: uppercase;
+}
+.lista-menu_titulo, .lista-menu_item{
+    padding: 1em;
+    background-color: var(--branco);
+}
